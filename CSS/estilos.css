@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    font-family: 'Brandon Grotesque Light', sans-serif;
+}
+a:hover{
+    color: orangered;
+    transition: 0.4s;
+}
+button:hover{
+    color: orangered;
+    transition: 0.4s;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a h1{
+    font-size: 300%;
+    letter-spacing: 10px;
+}
+
+/*NAV*/
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+nav div{
+    margin: 0 20px;
+    display: flex;
+}
+nav div i{
+    margin-right: 10px;
+    font-weight: normal;
+}
+nav div a{
+    display: flex;
+}
+nav div input{
+    border-radius: 0px;
+    border: 0;
+    padding: 5px 0 ;
+}
+nav div input:focus{
+    outline: 1px solid black;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0 30px;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    margin: 0 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav div div{
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: black;
+    color: transparent;
+}
+nav div div:hover{
+    background-color: orangered;
+    transition: 0.4s;
+}
+nav div div text{
+    margin: auto;
+    font-size: 80%;
+    color: white;
+}
+nav i{
+    font-size: 140%;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+/*PORTADA*/
+.portada img{
+    width: 100%;
+    display: block;
+}
+
+/*FIXED LINKS*/
+.fixed-social{
+    position: fixed;
+    top: 40%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.fixed-social i{
+    font-size: 150%;
+    color: black;
+}
+.fixed-social i:hover{
+    color: orangered;
+    transition: 0.4s;
+}
+.fixed-social a.chat-icon{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.fixed-social a.chat-icon:hover{
+    background-color: orangered;
+}
+.fixed-social a.chat-icon i{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    color: white;
+}
+
+button.fixed-chat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: black;
+    padding: 15px 50px;
+    border: 0;
+    cursor: pointer;
+}
+button.fixed-chat:hover{
+    background-color: orangered;
+    transition: 0.4s;
+}
+button.fixed-chat i{
+    font-size: 150%;
+    margin-right: 10px;
+}
+
+
+/*CONTENIDO*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.content h3{
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.content .articles{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content .articles article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .articles article img{
+    width: 300px;
+    height: 300px;
+}   
+.content .articles article p{
+    margin-top: 0;
+}
+.content .articles article button{
+    width: 90%;
+    border: none;
+    border-radius: 0;
+    border: 1px solid;
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 0;
+}   
+.content .articles article button:hover{
+    color: orangered;
+    transition: 0.4s;
+}   
+section .shop-all{
+    display: block;
+    width: 100px;
+    border: none;
+    border-radius: 0;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+section .shop-all:hover{
+    background-color: orangered;
+    transition: 0.4s;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h2{
+    font-size: 200%;
+    font-weight: normal;
+}
+footer .links{
+    display: flex;
+    margin-bottom: 20px;
+}
+footer .links ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 100px;
+}
+footer .links li{
+    width: 200px;
+}
+footer .links li a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+footer .links li a:hover{
+    color: orangered;
+    transition: 0.4s;
+}
+footer .links .social-networks{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: 0;
+}
+footer .links .social-networks i{
+    color: black;
+}
+footer .links .social-networks i:hover{
+    color: orangered;
+    transition: 0.4s;
+}
+footer .mailing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+footer .mailing h3{
+    font-weight: normal;
+}
+footer .mailing form{
+    margin: 0;
+    display: flex;
+}
+footer .mailing form input{
+    border: 0;
+    border: 1px solid;
+    background-color: transparent;
+    padding: 8px 0;
+    padding-left: 10px;
+    width: 300px;
+}
+footer .mailing form input:focus{
+    outline: none;
+}
+footer .mailing form button{
+    border-radius: 0;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+footer .mailing form button:hover{
+    background-color: orangered;
+    transition: 0.4s;
+}
+
+/*Diseño responsive*/
+/*NAV*/
+@media only screen and (max-width: 1000px){
+    nav ul{
+        margin: 0;
+    }
+    nav div{
+        margin: 0 10px;
+    }
+}
+@media only screen and (max-width: 880px){
+    nav ul li{
+        margin: 0 5px;
+    }
+}
+@media only screen and (max-width:670px){
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+/*ARTICLES*/
+@media only screen and (max-width:1190px){
+    .content .articles{
+        display: inline;
+        text-align: center;
+    }
+    .content .articles article{
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/*FOOTER*/
+@media only screen and (max-width:660px){
+    footer .links{
+        width: 100%;
+        justify-content: space-between;
+    }
+    footer .links ul{
+        margin: 0;
+    }
+}
+@media only screen and (max-width:460px){
+    footer .links{
+        display: block;
+    }
+    footer .links ul{
+        margin: 15px 0;
+    }
+    footer .links ul li{
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    footer .links .social-networks{
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    footer .mailing form{
+        display: inline-block;
+        text-align: center;
+    }
+    footer .mailing form button{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+/*FIXED MENU*/
+@media only screen and (max-width:880px){
+    .fixed-social{
+        height: 150px;
+    }
+    .fixed-social a.chat-icon{
+        display: block;
+    }
+    button.fixed-chat{
+        display: none;
+    }
+}
