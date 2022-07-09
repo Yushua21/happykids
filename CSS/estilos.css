@@ -300,6 +300,9 @@ footer .mailing form button:hover{
     background-color: orangered;
     transition: 0.4s;
 }
+footer p{
+        text-align: center;
+}
 
 /*Diseño responsive*/
 /*NAV*/
@@ -376,9 +379,6 @@ footer .mailing form button:hover{
     footer .mailing form button{
         margin-left: 0px;
         margin-top: 10px;
-    }
-    footer p{
-        text-align: center;
     }
 }
 
